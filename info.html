@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+        .custom {
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: 33% 66%;
+        }
+        
+        .thumb {
+
+        }
+
+        .thumb img{
+            width: 100%;
+        }
+
+        .textarea {
+            background: wheat;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .textarea {
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div is="header" data-role="header" data-position="fixed" data-theme="b">
+            <h3>最新資訊</h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(rgb(212, 63, 63),rgb(199, 148, 91)); color:#fff;">公告</li>
+            </ul>
+            <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+                <li is="listview-li">
+                    <a href="#Content1" data-transition="slide">母親節提前預購送</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content2" data-transition="flip">身份證字有8和5享結帳85折</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content3" data-transition="slideup">生日壽星享好禮</a>
+                </li>
+            
+            </ul>
+        </div>
+    </div>    
+<!-- 母親節提前預購送 Page: Content  -->
+<div id="Content1" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>最新資訊</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+                <div id="hero" style="font-size:20px; font-weight:bold; color:white; width:100%; text-align:center;">母親節提前預購</div>
+                <div class="custom">
+                    <div class="thumb">
+                        <img src="images/mother.jpg" alt="">
+                    </div>
+                    <div class="textarea">
+                        <h1>母親節提前預購</h1>
+                        <h2>送4吋小乳酪蛋糕</h2>
+                    </div>
+                </div>
+                <div><img src="cake/creem.jpg" style="width:100%;"></div>
+s
+            </div>
+    </div>
+    
+    <!-- 身份證字有8和5享結帳85折 Page: Content  -->
+    <div id="Content2" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>最新資訊</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+                <div id="hero" style="font-size:20px; font-weight:bold; color:white; width:100%; text-align:center;">身份證字有8和5享結帳85折</div>
+                <div class="custom">
+                    <div class="thumb">
+                        <img src="images/85.png" alt="">
+                    </div>
+                    <div class="textarea">
+                        <h1>4/12號至4/30號</h1>
+                        <h2>結帳出示身分證享有85折優惠</h2>
+                        <h2>記得需要同時有8和5喔</h2>
+                    </div>
+                </div>
+                <div><img src="images/dis.jpg" style="width:100%;"></div>
+            </div>
+    </div>
+    
+    <!-- 生日壽星享好禮 Page: Content  -->
+    <div id="Content3" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>最新資訊</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+                <div id="hero" style="font-size:20px; font-weight:bold; color:white; width:100%; text-align:center;">生日壽星享好禮</div>
+                <div class="custom">
+                    <div class="thumb">
+                        <img src="images/happy.jpg" alt="">
+                    </div>
+                    <div class="textarea">
+                        <h1>生日你最大</h1>
+                        <h2>出示身分證</h2>
+                        <h2>即享有5折優待</h2>
+                        <h6>需本人親自結帳</h6>
+                    </div>
+                </div>
+                <div><img src="images/birth.png" style="width:100%;"></div>
+            </div>
+    </div>
+</body>
+</html>
